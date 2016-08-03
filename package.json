@@ -1,0 +1,18 @@
+{
+  "name": "gemini-react",
+  "version": "1.0.0",
+  "description": "Wrapper, which simplifies writing gemini tests for react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ya> (https://github.com/SevInf)",
+  "license": "MIT",
+  "peerDependecies": {
+    "gemini": "4.x"
+  },
+  "devDependencies": {
+    "gemini": "^4.4.4",
+    "mocha": "^3.0.0"
+  }
+}
