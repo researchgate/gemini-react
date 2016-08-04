@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "precommit": "npm run lint"
   },
-  "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ya> (https://github.com/SevInf)",
+  "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
   "peerDependecies": {
     "gemini": "4.x"
