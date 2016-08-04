@@ -2,8 +2,8 @@
 const wrap = require('./lib/server-suite-wrapper');
 const Server = require('./lib/server');
 
-module.exports = function(gemini) {
-    const server = new Server();
+module.exports = function(gemini, options) {
+    const server = new Server(options);
     let geminiReact = null;
 
     Object.defineProperty(global, 'geminiReact', {
