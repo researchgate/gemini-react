@@ -4,7 +4,9 @@
   "description": "Wrapper, which simplifies writing gemini tests for react components",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint .",
+    "precommit": "npm run lint"
   },
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ya> (https://github.com/SevInf)",
   "license": "MIT",
@@ -12,7 +14,16 @@
     "gemini": "4.x"
   },
   "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-gemini-testing": "^2.2.0",
     "gemini": "^4.4.4",
+    "husky": "^0.11.6",
     "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "koa": "^1.2.1",
+    "lodash": "^4.14.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   }
 }

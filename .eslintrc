@@ -1,0 +1,4 @@
+{
+  "extends": "gemini-testing",
+  "root": true
+}
