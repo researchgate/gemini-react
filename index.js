@@ -6,6 +6,8 @@ const Server = require('./lib/server');
 module.exports = function(gemini, options) {
     const server = new Server({
         projectRoot: gemini.config.system.projectRoot,
+        port: options.port || 5432,
+        hostname: options.hostname || '127.0.0.1',
         webpackConfig: path.resolve(gemini.config.system.projectRoot, options.webpackConfig)
     });
 

@@ -1,6 +1,6 @@
 {
   "name": "gemini-react",
-  "version": "1.0.0",
+  "version": "1.0.0-pre",
   "description": "Wrapper, which simplifies writing gemini tests for react components",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,10 @@
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
   "peerDependecies": {
-    "gemini": "4.x"
+    "gemini": ">= 4.6.0",
+    "react": "15.x",
+    "react-dom": "15.x",
+    "webpack": "1.x"
   },
   "devDependencies": {
     "eslint": "^3.2.2",
@@ -19,15 +22,16 @@
     "gemini": "^4.4.4",
     "husky": "^0.11.6",
     "mocha": "^3.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "dependencies": {
     "koa": "^1.2.1",
     "koa-webpack-dev-middleware": "^1.2.1",
     "lodash": "^4.14.1",
     "mkdirp": "^0.5.1",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "promisify-node": "^0.4.0",
     "rimraf": "^2.5.4"
   }
 }
