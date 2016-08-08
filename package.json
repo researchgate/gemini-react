@@ -33,5 +33,20 @@
     "mkdirp": "^0.5.1",
     "promisify-node": "^0.4.0",
     "rimraf": "^2.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/researchgate/gemini-react.git"
+  },
+  "keywords": [
+    "gemini-plugin",
+    "gemini",
+    "react",
+    "test",
+    "testing"
+  ],
+  "bugs": {
+    "url": "https://github.com/researchgate/gemini-react/issues"
+  },
+  "homepage": "https://github.com/researchgate/gemini-react#readme"
 }
