@@ -9,22 +9,20 @@ module.exports = function(gemini, options) {
         webpackConfig: path.resolve(gemini.config.system.projectRoot, options.webpackConfig)
     });
 
-    let geminiReact = null;
-
-    Object.defineProperty(global, 'geminiReact', {
-        get() {
-            if (!geminiReact) {
-                geminiReact = wrap(global.gemini, server);
-            }
-            return geminiReact;
-        }
-    });
-
     gemini.on('startRunner', () => {
         return server.start()
             .then(url => {
                 setRootUrl(gemini.config, url);
             });
+    });
+
+    gemini.on('beforeFileRead', (fileName) => {
+        global.geminiReact = wrap(global.gemini, server);
+        server.bundleTestFileForBrowser(fileName);
+    });
+
+    gemini.on('afterFileRead', () => {
+        delete global.geminiReact;
     });
 
     gemini.on('endRunner', () => server.stop());
