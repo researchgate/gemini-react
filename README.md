@@ -31,6 +31,10 @@ system:
   loaders from this file to build test pages.
 * `hostname` (default: 127.0.0.1) - hostname to run reference test server on.
 * `port` (default: 5432) - port to run test server on.
+* `staticRoot` - directory, which contains your static asset files. Will be
+mounted by your test server automatically.
+* `cssFiles` - list of CSS files to include in every test page. Requires
+  `staticRoot` option to be set.
 
 ## Writing the tests
 
@@ -56,4 +60,11 @@ inside your test:
 suite.capture('clicked', function(actions) {
     actions.click(this.renderedComponent);
 });
+```
+
+If you have any test-specific stylesheets, you can include them into the test
+page by calling `suite.includeCss`:
+
+```javscript
+suite.includeCss('/my-component.css');
 ```
