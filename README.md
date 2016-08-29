@@ -50,6 +50,8 @@ geminiReact.suite('my react test', suite => {
 });
 ```
 
+**TIP**: To use JSX in your tests, you might need [gemini-babel](https://github.com/researchgate/gemini-babel) plugin.
+
 You don't need to create the reference pages or run the server, plugin will do
 everything for you.
 
