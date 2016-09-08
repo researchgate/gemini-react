@@ -11,7 +11,7 @@ not use in production.
 1. Install plugin using `npm`:
 
    ```
-   npm install https://github.com/researchgate/gemini-react
+   npm install gemini-react
    ```
 
 2. Enable it in your gemini config file:
