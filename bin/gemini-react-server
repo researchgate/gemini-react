@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+'use strict';
+
+const program = require('commander');
+const Gemini = require('gemini');
+const pgk = require('../package.json');
+const setup = require('../lib/setup');
+
+program
+    .version(pgk.version)
+    .option('-c, --config <path>', 'Path to .gemini.yml')
+    .arguments('[paths...]')
+    .parse(process.argv);
+
+const gemini = new Gemini(program.config);
+const server = setup(gemini);
+gemini.readTests(program.args)
+    .then(() => server.start())
+    .then(url => console.log(`Server is running on ${url}`));

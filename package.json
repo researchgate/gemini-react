@@ -10,6 +10,9 @@
   },
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
+  "bin": {
+    "gemini-react-server": "bin/gemini-react-server"
+  },
   "peerDependecies": {
     "gemini": ">= 4.7.2",
     "react": "15.x",
@@ -27,6 +30,7 @@
     "react-dom": "^15.3.0"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "debug": "^2.2.0",
     "express": "^4.14.0",
     "lodash": "^4.14.1",
