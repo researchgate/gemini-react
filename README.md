@@ -35,6 +35,18 @@ system:
 mounted by your test server automatically.
 * `cssFiles` - list of CSS files to include in every test page. Requires
   `staticRoot` option to be set.
+* `customizeServer` - path to js file, used to customize the express server.
+  The file should have a single export, which is function of `(app, express)`.
+  
+  Example: 
+
+  ```js
+  module.exports = function(app, express) {
+    app.use(function myMiddleware(req, res, next) {
+        ...
+    });
+  }
+  ```
 
 ## Writing the tests
 
