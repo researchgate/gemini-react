@@ -29,7 +29,9 @@ system:
 
 * `webpackConfig` (required) – path to your webpack config. Plugin will use
   loaders from this file to build test pages.
-* `hostname` (default: 127.0.0.1) - hostname to run reference test server on.
+* `listenHost` (default: 127.0.0.1) - hostname to run reference test server on.
+* `publicHost`: (default: equal to `listenHost`) - hostname to direct selenium
+  browsers to.
 * `port` (default: 5432) - port to run test server on.
 * `staticRoot` - directory, which contains your static asset files. Will be
 mounted by your test server automatically.
