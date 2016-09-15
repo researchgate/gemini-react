@@ -35,6 +35,9 @@ system:
 mounted by your test server automatically.
 * `cssFiles` - list of CSS files to include in every test page. Requires
   `staticRoot` option to be set.
+* `jsModules` - list of additional js modules to include in the test pages.
+  Relative to project root. This modules will be included into your client
+  bundle before the rest files.
 * `customizeServer` - path to js file, used to customize the express server.
   The file should have a single export, which is function of `(app, express)`.
   
