@@ -42,8 +42,8 @@ mounted by your test server automatically.
   bundle before the rest files.
 * `customizeServer` - path to js file, used to customize the express server.
   The file should have a single export, which is function of `(app, express)`.
-  
-  Example: 
+
+  Example:
 
   ```js
   module.exports = function(app, express) {
@@ -86,4 +86,11 @@ page by calling `suite.includeCss`:
 
 ```javscript
 suite.includeCss('/my-component.css');
+```
+
+By default, `geminiReact` will capture rendered at mounting point element.
+If you want to add some extra elements, use `setExtraCaptureElements`:
+
+```javascript
+suite.setExtraCaptureElements(['.popup']);
 ```
