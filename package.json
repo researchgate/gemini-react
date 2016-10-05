@@ -22,7 +22,7 @@
   "devDependencies": {
     "eslint": "^3.2.2",
     "eslint-config-gemini-testing": "^2.2.0",
-    "gemini": "^4.4.4",
+    "gemini": "^4.11.3",
     "husky": "^0.11.6",
     "mocha": "^3.0.0",
     "webpack": "^1.13.1",
