@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^3.2.2",
-    "eslint-config-gemini-testing": "^2.2.0",
+    "eslint-config-gemini-testing": "^2.3.0",
     "gemini": "^4.4.4",
     "husky": "^0.11.6",
     "mocha": "^3.0.0",
