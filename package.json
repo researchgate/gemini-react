@@ -23,7 +23,7 @@
     "eslint": "^3.2.2",
     "eslint-config-gemini-testing": "^2.2.0",
     "gemini": "^4.4.4",
-    "husky": "^0.11.6",
+    "husky": "^0.11.9",
     "mocha": "^3.0.0",
     "webpack": "^1.13.1",
     "react": "^15.3.0",
