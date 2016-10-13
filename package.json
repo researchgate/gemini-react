@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "commitmsg": "conventional-changelog-lint -e"
   },
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
@@ -20,14 +21,15 @@
     "webpack": "1.x"
   },
   "devDependencies": {
+    "conventional-changelog-lint": "^1.0.1",
     "eslint": "^3.2.2",
     "eslint-config-gemini-testing": "^2.2.0",
     "gemini": "^4.4.4",
     "husky": "^0.11.6",
     "mocha": "^3.0.0",
-    "webpack": "^1.13.1",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "webpack": "^1.13.1"
   },
   "dependencies": {
     "commander": "^2.9.0",
