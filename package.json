@@ -1,13 +1,14 @@
 {
   "name": "gemini-react",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Wrapper, which simplifies writing gemini tests for react components",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
     "precommit": "npm run lint",
-    "commitmsg": "conventional-changelog-lint -e"
+    "commitmsg": "conventional-changelog-lint -e",
+    "release": "standard-version"
   },
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
@@ -29,6 +30,7 @@
     "mocha": "^3.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "standard-version": "^3.0.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {
