@@ -52,6 +52,8 @@ mounted by your test server automatically.
     });
   }
   ```
+* `webpackLazyMode` - switches webpack dev middleware to lazy mode, which means
+javascript will be recompiled on each request.
 
 ## Writing the tests
 
