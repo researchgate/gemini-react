@@ -36,7 +36,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "debug": "^2.2.0",
-    "eslint": "^3.7.1",
+    "eslint": "^3.8.0",
     "eslint-config-gemini-testing": "^2.3.0",
     "express": "^4.14.0",
     "gemini": "^4.12.2",
