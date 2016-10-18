@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/researchgate/gemini-react/compare/v0.8.0...v0.9.0)
+(2016-10-18)
+
+
+### Features
+
+* Add `replaceRootUrl` option ([da55f54](https://github.com/researchgate/gemini-react/commit/da55f54))
+
+
+### BREAKING CHANGES
+
+* `publicHost` option is removed. If you need `rootUrl`
+to have different value, set `replaceRootUrl` option to `false` and
+manually set `rootUrl`.
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/researchgate/gemini-react/compare/v0.7.2...v0.8.0) (2016-10-17)
 
