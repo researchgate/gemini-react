@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "precommit": "npm run lint",
     "commitmsg": "conventional-changelog-lint -e",
-    "release": "standard-version"
+    "release": "standard-version",
+    "github-release": "conventional-github-releaser"
   },
   "author": "Sergey Tatarintsev <tatarincev.serg@yandex.ua> (https://github.com/SevInf)",
   "license": "MIT",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "conventional-changelog-lint": "^1.0.1",
+    "conventional-github-releaser": "^1.1.3",
     "eslint": "^3.2.2",
     "eslint-config-gemini-testing": "^2.2.0",
     "gemini": "^4.4.4",
