@@ -22,7 +22,7 @@ system:
     react:
       webpackConfig: <PATH>
       hostname: <HOST NAME>
-      port: <PORT NUMBER>
+      port: <PORT NUMBER> ```
 ```
 
 ### Options
@@ -30,9 +30,10 @@ system:
 * `webpackConfig` (required) – path to your webpack config. Plugin will use
   loaders from this file to build test pages.
 * `listenHost` (default: 127.0.0.1) - hostname to run reference test server on.
-* `publicHost`: (default: equal to `listenHost`) - hostname to direct selenium
-  browsers to.
 * `port` (default: 5432) - port to run test server on.
+* `replaceRootUrl` (default: true) - automatically sets `rootUrl` of every
+  browser to `http://<listenHost>:<port>`. Set to `false` if `rootUrl` should be
+  something else.
 * `staticRoot` - directory, which contains your static asset files. Will be
 mounted by your test server automatically.
 * `cssFiles` - list of CSS files to include in every test page. Requires

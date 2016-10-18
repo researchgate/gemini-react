@@ -1,13 +1,17 @@
 'use strict';
+const _ = require('lodash');
 const setup = require('./lib/setup');
 
-module.exports = function(gemini) {
+module.exports = function(gemini, options) {
     const server = setup(gemini);
+    const replaceRootUrl = _.get(options, 'replaceRootUrl', true);
 
     gemini.on('startRunner', () => {
         return server.start()
             .then(url => {
-                setRootUrl(gemini.config, url);
+                if (replaceRootUrl) {
+                    setRootUrl(gemini.config, url);
+                }
             });
     });
 
