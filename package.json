@@ -4,7 +4,7 @@
   "description": "Wrapper, which simplifies writing gemini tests for react components",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "istanbul test --include-all-sources _mocha",
     "lint": "eslint .",
     "precommit": "npm run lint",
     "commitmsg": "conventional-changelog-lint -e",
@@ -30,6 +30,7 @@
     "eslint-config-gemini-testing": "^2.2.0",
     "gemini": "^4.4.4",
     "husky": "^0.11.6",
+    "istanbul": "^0.4.5",
     "mocha": "^3.1.2",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
