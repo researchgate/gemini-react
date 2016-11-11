@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/researchgate/gemini-react/compare/v0.9.0...v0.10.0)
+(2016-11-11)
+
+
+### Bug Fixes
+
+* use webpack config from options completely ([b733188](https://github.com/researchgate/gemini-react/commit/b733188))
+* **deps:** remove unnecessary dependencies ([10f7020](https://github.com/researchgate/gemini-react/commit/10f7020))
+
+
+### BREAKING CHANGES
+
+* `webpackLazyMode` option is now incompatible with webpack plugins,
+which split one chunk into multiple. Either switch it off or exclude
+such plugins from your config from gemini tests.
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/researchgate/gemini-react/compare/v0.8.0...v0.9.0)
 (2016-10-18)

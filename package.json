@@ -1,6 +1,6 @@
 {
   "name": "gemini-react",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Wrapper, which simplifies writing gemini tests for react components",
   "main": "index.js",
   "scripts": {
