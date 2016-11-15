@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/researchgate/gemini-react/compare/v0.10.0...v0.10.1) (2016-11-15)
+
+
+### Bug Fixes
+
+* crash in lazy mode ([4a7b36d](https://github.com/researchgate/gemini-react/commit/4a7b36d))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/researchgate/gemini-react/compare/v0.9.0...v0.10.0)
 (2016-11-11)
