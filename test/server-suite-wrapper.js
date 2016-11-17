@@ -109,13 +109,32 @@ describe('server-suite-wrapper', () => {
         });
 
         describe('setExtraCaptureElements', () => {
-            it('should capture additional selectors', () => {
+            it('should work with a string', () => {
                 const selector = '.extra-selector';
 
                 wrapped.setExtraCaptureElements(selector);
                 wrapped.render();
 
                 assert.calledWithExactly(original.setCaptureElements, [RENDER_TARGET_SELECTOR, selector]);
+            });
+
+            it('should work with an array', () => {
+                const selector1 = '.selector1';
+                const selector2 = '.selector2';
+
+                wrapped.setExtraCaptureElements([selector1, selector2]);
+                wrapped.render();
+
+                assert.calledWithExactly(
+                    original.setCaptureElements,
+                    [RENDER_TARGET_SELECTOR, selector1, selector2]
+                );
+            });
+
+            it('should throw on non array and non string argument', () => {
+                assert.throws(() => {
+                    wrapped.setExtraCaptureElements(1234);
+                }, 'setExtraCaptureElements accepts an array or string');
             });
         });
     });
