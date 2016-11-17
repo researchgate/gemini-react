@@ -1,5 +1,7 @@
 # gemini-react
 
+[![Build Status](https://travis-ci.org/researchgate/gemini-react.svg?branch=master)](https://travis-ci.org/researchgate/gemini-react)
+
 [gemini](https://github.com/gemini-testing/gemini) plugin for simplifying visual
 regression testing on React + webpack stack.
 
