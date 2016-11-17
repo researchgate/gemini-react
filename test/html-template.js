@@ -13,7 +13,7 @@ describe('html template', () => {
             jsList: [],
             cssList: []
         });
-        return jsdom.jsdom(htmlTemplate(templateData));
+        return jsdom.jsdom(htmlTemplate.render(templateData));
     }
 
     it('should have a test name as a title', () => {
