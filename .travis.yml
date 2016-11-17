@@ -6,6 +6,9 @@ script:
   - npm run lint
   - npm test --coverage
 
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
 env:
   - CXX=g++-4.8
 addons:
