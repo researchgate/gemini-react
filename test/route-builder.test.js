@@ -82,11 +82,11 @@ describe('RouteBuilder', () => {
     });
 
     describe('template data', () => {
-        const getTemplateData = (setupBuilder) => {
+        const getTemplateData = (setupBuilder, commonJs) => {
             const routeBuilder = new RouteBuilder();
             setupBuilder(routeBuilder);
             const url = routeBuilder.buildRoute();
-            return routeBuilder.getTemplateDataFromUrl(url);
+            return routeBuilder.getTemplateDataFromUrl(url, commonJs);
         };
 
         it('should have a title based on suite name', () => {
@@ -161,7 +161,16 @@ describe('RouteBuilder', () => {
                 routeBuilder.setCurrentPageJSUrl('/example.js');
             });
 
-            assert.equal(data.jsUrl, '/example.js');
+            assert.include(data.jsList, '/example.js');
+        });
+
+        it('should include common scripts', () => {
+            const data = getTemplateData(
+                (routeBuilder) => routeBuilder.setCurrentPageJSUrl('/test.js'),
+                ['/common.js']
+            );
+
+            assert.deepEqual(data.jsList, ['/common.js', '/test.js']);
         });
     });
 });
