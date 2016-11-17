@@ -1,3 +1,4 @@
+'use strict';
 const wrap = require('../lib/server-suite-wrapper');
 const assert = require('chai').assert;
 const sinon = require('sinon');
