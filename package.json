@@ -47,7 +47,6 @@
     "ignore-styles": "^5.0.1",
     "lodash": "^4.16.4",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.1.2",
     "promisify-node": "^0.4.0",
     "rimraf": "^2.5.4",
     "server-destroy": "^1.0.1",
