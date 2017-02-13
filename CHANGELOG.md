@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/researchgate/gemini-react/compare/v0.10.2...v0.11.0) (2017-02-13)
+
+
+### Bug Fixes
+
+* remove mocha from deps ([73e1572](https://github.com/researchgate/gemini-react/commit/73e1572))
+* throw exception on invalid input to setExtraCaptureElement ([49081ec](https://github.com/researchgate/gemini-react/commit/49081ec))
+
+### Features
+
+* add ability to use .jsx extensions for tests ([b4a90b2](https://github.com/researchgate/gemini-react/commit/b4a90b2))
+
+
+
 <a name="0.10.2"></a>
 ## [0.10.2](https://github.com/researchgate/gemini-react/compare/v0.10.1...v0.10.2) (2016-11-15)
 
