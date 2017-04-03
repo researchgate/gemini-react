@@ -38,7 +38,7 @@
     "react-dom": "^15.3.0",
     "sinon": "^2.0.0",
     "standard-version": "^4.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "^2.3.3"
   },
   "dependencies": {
     "commander": "^2.9.0",
