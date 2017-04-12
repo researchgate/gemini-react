@@ -100,3 +100,25 @@ If you want to add some extra elements, use `setExtraCaptureElements`:
 ```javascript
 suite.setExtraCaptureElements(['.popup']);
 ```
+
+## Viewing the example page
+
+If you want to view example pages without actually running the tests, you can use `gemini-react-server` binary, provided by this package:
+
+```
+./node_modules/.bin/gemini-react-server
+```
+
+It will run the server on the  host and port, specified in plugin configuration in `.gemini.yml`.
+
+The url of each example is a series of ulr-encoded suite names. For example, this suite:
+
+```javascript
+geminiReact.suite('parent', () => {
+    geminiReact.suite('child', () => {
+       ...
+    });
+})
+```
+
+will be served at `http://HOST:PORT/parent/child` url.
