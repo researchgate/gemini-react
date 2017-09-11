@@ -48,7 +48,7 @@
     "lodash": "^4.16.4",
     "mkdirp": "^0.5.1",
     "promisify-node": "^0.4.0",
-    "rimraf": "^2.5.4",
+    "rimraf": "^2.6.2",
     "server-destroy": "^1.0.1",
     "webpack-dev-middleware": "^1.8.4"
   },
