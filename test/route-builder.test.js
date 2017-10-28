@@ -100,7 +100,6 @@ describe('RouteBuilder', () => {
             );
         });
 
-
         it('should have a title based on full name of nested suites', () => {
             const data = getTemplateData((routeBuilder) => {
                 routeBuilder.pushSuite('first');
@@ -122,7 +121,6 @@ describe('RouteBuilder', () => {
             assert.include(data.cssList, '/stylesheet.css');
         });
 
-
         it('should contain multiple included stylesheets', () => {
             const data = getTemplateData((routeBuilder) => {
                 routeBuilder.pushSuite('example');
@@ -133,7 +131,6 @@ describe('RouteBuilder', () => {
             assert.include(data.cssList, '/first.css');
             assert.include(data.cssList, '/second.css');
         });
-
 
         it('should inherit stylesheets from parent', () => {
             const data = getTemplateData((routeBuilder) => {

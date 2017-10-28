@@ -80,7 +80,6 @@ describe('server-suite-wrapper', () => {
             assert.throws(() => wrapped.setCaptureElements(['.test']));
         });
 
-
         it('disallows calling `setUrl`', () => {
             assert.throws(() => wrapped.setUrl('/some/path'));
         });

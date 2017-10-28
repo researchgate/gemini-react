@@ -33,7 +33,6 @@ describe('client wrapper', () => {
     describe('render', () => {
         let wrapped;
 
-
         function setupDomAndSuites(options) {
             setupDom(options.urlPathName);
 
@@ -76,7 +75,6 @@ describe('client wrapper', () => {
                 checkIfRendersTheElement();
             });
         });
-
 
         describe('when suite path matches URL incomletely', () => {
             it('should not render element', () => {
@@ -153,4 +151,3 @@ describe('client wrapper', () => {
         });
     });
 });
-

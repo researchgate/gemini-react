@@ -24,7 +24,6 @@ describe('html template', () => {
         assert.equal(document.title, 'some title');
     });
 
-
     it('should have a mount point', () => {
         const document = renderTemplateAsDom();
 
@@ -46,7 +45,6 @@ describe('html template', () => {
             'Expected to render script tag'
         );
     });
-
 
     it('should include css from css list', () => {
         const path = '/some/file.css';
