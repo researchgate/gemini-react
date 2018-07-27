@@ -37,7 +37,7 @@
     "mocha": "^3.1.2",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "sinon": "^2.0.0",
+    "sinon": "^3.0.0",
     "standard-version": "^4.0.0",
     "webpack": "^1.13.1"
   },
