@@ -23,7 +23,7 @@
     "webpack": "1.x"
   },
   "devDependencies": {
-    "@commitlint/cli": "^4.2.2",
+    "@commitlint/cli": "^7.1.0",
     "@commitlint/config-angular": "^4.2.1",
     "chai": "^4.0.0",
     "conventional-github-releaser": "^1.1.3",
