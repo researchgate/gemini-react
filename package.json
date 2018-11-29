@@ -29,7 +29,7 @@
     "conventional-github-releaser": "^1.1.3",
     "eslint": "^3.2.2",
     "eslint-config-gemini-testing": "^2.2.0",
-    "gemini": "^4.4.4",
+    "gemini": "^6.0.0",
     "husky": "^0.14.3",
     "istanbul": "^0.4.5",
     "jsdom": "^9.8.3",
